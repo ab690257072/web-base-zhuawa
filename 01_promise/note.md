@@ -483,6 +483,8 @@ Promise.race([p2, p1, p3]).then(res => {
 
 ## 四、参考
 
+> [完整代码](https://github.com/ab690257072/web-base-zhuawa/blob/master/01_promise/MyPromise.js)
+>
 > [MDN，关于Promise API 的准确描述](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Promise/resolve)
 >
 > [Promise/A+ 规范](https://promisesaplus.com/)

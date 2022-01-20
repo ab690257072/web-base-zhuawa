@@ -35,12 +35,12 @@ class MyPromise {
     switch(newStatus) {
       case FULFILLED:
         this.FULFILLED_CALLBACK_LIST.forEach(callback => {
-          callback(this.value);
+          callback();
         });
         break;
       case REJECTED:
         this.REJECTED_CALLBACK_LIST.forEach(callback => {
-          callback(this.reason);
+          callback();
         });
         break;
     }

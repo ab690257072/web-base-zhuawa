@@ -1,0 +1,98 @@
+{
+  "main": {
+    "id": "775f8207b69e2534",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ef34490bcf4c262",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "03_bom&dom/note.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b20317e4cf3c42c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "ccdb8f5f0c9eb163",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f33b47a7e7d77f98",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "08505276f1d2c590",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "d42c3f83bdcf8951",
+    "type": "split",
+    "children": [
+      {
+        "id": "70a45719b826b387",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9cc9633524371e80",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03_bom&dom/note.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9ef34490bcf4c262",
+  "lastOpenFiles": [
+    "03_bom&dom/note.md",
+    "Pasted image 20220607205300.png",
+    "02_js-module/note.md",
+    "01_promise/note.md"
+  ]
+}

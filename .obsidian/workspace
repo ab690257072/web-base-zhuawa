@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "03_bom&dom/note.md",
+            "file": "20_vue前端路由及异步组件/note.md",
             "mode": "source",
             "source": false
           }
@@ -70,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03_bom&dom/note.md",
+                "file": "20_vue前端路由及异步组件/note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,9 +90,15 @@
   },
   "active": "9ef34490bcf4c262",
   "lastOpenFiles": [
-    "03_bom&dom/note.md",
-    "Pasted image 20220607205300.png",
-    "02_js-module/note.md",
-    "01_promise/note.md"
+    "20_vue前端路由及异步组件/note.md",
+    "19_vue3源码解析（下）/note.md",
+    "18_vue3源码解析（上）/note.md",
+    "17_vue状态管理 & SSR/note.md",
+    "16_微前端（下）/note.md",
+    "15_微前端（上）& 补录/note.md",
+    "14_vue-cli/note.md",
+    "13_vue高级用法/note.md",
+    "12_this指针&闭包&作用域/note.md",
+    "11_vue基础/note.md"
   ]
 }

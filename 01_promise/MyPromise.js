@@ -72,7 +72,7 @@ class MyPromise {
         queueMicrotask(() => {
           try {
             const x = realOnFulfilled(this.value);
-            // 根据then回调结果处理promise2
+            // 根据回调结果处理promise2
             this.resolvePromise(promise2, x, resolve, reject);
           } catch(err) {
             reject(err); // 若执行过程中报错，则直接拒绝
@@ -199,12 +199,16 @@ class MyPromise {
   /************* Promise.race(list) *************/
   static race(anyList) {
     return new MyPromise((resolve, reject) => {
+      // 判断参数是否为可迭代结构
+      if(!anyList || typeof anyList[Symbol.iterator] != 'function') {
+        return reject(new TypeError('arguments must be iterable.'));
+      }
       const len = anyList.length;
-      if(len === 0) {
-        resolve(); // 无数据时直接返回一个空promise
+      if(len === 0) { // 无数据时，期约要固定为pending
+        return;
       } else {
         for(let i = 0; i < len; i++) {
-          MyPromise.resolve(anyList).then(
+          MyPromise.resolve(anyList[i]).then(
             value => {
               resolve(value); // 只要有某项解决就将结果解决
             },
@@ -302,12 +306,12 @@ const p3 = new MyPromise((resolve, reject) => {
     resolve(3);
   }, 3000);
 })
-Promise.all([p2, p1, p3]).then(res => {
+MyPromise.all([p2, p1, p3]).then(res => {
   console.log('all_成功 ', res);
 }).catch(e => {
   console.log('all_失败 ', e);
 });
-Promise.race([p2, p1, p3]).then(res => {
+MyPromise.race([p2, p1, p3]).then(res => {
   console.log('race_成功 ', res);
 }).catch(e => {
   console.log('race_失败 ', e);
